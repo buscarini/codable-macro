@@ -29,7 +29,7 @@ let package = Package(
         .macro(
             name: "CodableMacros",
             dependencies: [
-                .product(name: "SwiftSyntaxWrapper", package: "swift-syntax-xcframeworks"),
+                .product(name: "SwiftSyntaxWrapper", package: "swift-syntax"),
             ]
         ),
         .target(name: "Codable", dependencies: ["CodableMacros"]),
@@ -38,7 +38,7 @@ let package = Package(
             name: "CodableTests",
             dependencies: [
                 "CodableMacros",
-                .product(name: "SwiftSyntaxWrapper", package: "swift-syntax-xcframeworks"),
+                .product(name: "SwiftSyntaxWrapper", package: "swift-syntax"),
             ]
         ),
     ]
