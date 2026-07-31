@@ -23,7 +23,7 @@ let package = Package(
         // We use a pre-built dependency on the swift-syntax package (https://github.com/swiftlang/swift-syntax)
         // in order to prevent excessive slow compilation.
         // See https://forums.swift.org/t/compilation-extremely-slow-since-macros-adoption/67921/132 for details.
-        .package(url: "https://github.com/swiftlang/swift-syntax.git", "600.0.0"..<"603.0.0")
+        .package(url: "https://github.com/swiftlang/swift-syntax.git", from: "600.0.1")
     ],
     targets: [
         .macro(
